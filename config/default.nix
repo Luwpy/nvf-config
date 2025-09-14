@@ -24,4 +24,5 @@
 in {
   imports = [] ++ core ++ assistant ++ plugins ++ ui ++ utility;
   vim.enableLuaLoader = true;
+  
 }

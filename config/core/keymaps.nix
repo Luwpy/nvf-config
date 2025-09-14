@@ -123,5 +123,57 @@
       action = "<cmd>FloatermToggle<CR>";
       desc = "Toggle Floaterm";
     }
+    {
+      key = "<C-h>";
+      mode = "i";
+      action = "<Left>";
+      desc = "Move left in insert mode";
+    }
+    {
+      key = "<C-j>";
+      mode = "i";
+      action = "<Down>";
+      desc = "Move down in insert mode";
+    }
+    {
+      key = "<C-k>";
+      mode = "i";
+      action = "<Up>";
+      desc = "Move up in insert mode";
+    }
+    {
+      key = "<C-l>";
+      mode = "i";
+      action = "<Right>";
+      desc = "Move right in insert mode";
+    }
+
+    # Insert mode word navigation
+    {
+      key = "<C-b>";
+      mode = "i";
+      action = "<C-Left>";
+      desc = "Move word backward in insert mode";
+    }
+    {
+      key = "<C-f>";
+      mode = "i";
+      action = "<C-Right>";
+      desc = "Move word forward in insert mode";
+    }
+
+    # Insert mode line navigation
+    {
+      key = "<C-a>";
+      mode = "i";
+      action = "<Home>";
+      desc = "Go to beginning of line in insert mode";
+    }
+    {
+      key = "<C-e>";
+      mode = "i";
+      action = "<End>";
+      desc = "Go to end of line in insert mode";
+    }
   ];
 }

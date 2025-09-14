@@ -6,9 +6,8 @@
     "go"
     "html"
     "java"
-    #"js"
-    #"json"
-    "kotlin"
+    #    "json"
+    #"kotlin"
     "lua"
     "markdown"
     "nix"
@@ -16,10 +15,9 @@
     "rust"
     "sql"
     #"toml"
-    #"tsx"
-    #"typescript"
+    "ts"
     "yaml"
-    "zig"
+    #"zig"
 
     # Rarely Used or Niche Today
     # "assembly"
@@ -49,6 +47,7 @@
       name = lang;
       value = {
         treesitter.enable = true;
+        #        lsp.enable = true;
       };
     })
     treesitterLanguages
@@ -88,6 +87,10 @@ in {
         enableFormat = true;
         enableTreesitter = true;
         enableExtraDiagnostics = true;
+
+        ts.lsp.enable = true;
+        nix.lsp.enable = true;
+        rust.lsp.enable = true;
       }
       // treeSitterEnables;
   };

@@ -29,6 +29,10 @@
       #shadafile = "NONE";
 
       wrap = false;
+      scrolloff = 8;
+      sidescrolloff = 8;
+      signcolumn = "yes";
+      termguicolors = true;
     };
   };
 }
